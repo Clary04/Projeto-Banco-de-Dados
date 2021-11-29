@@ -52,7 +52,7 @@ CREATE TABLE Cartao_SUS(
 -- Triagem
 CREATE TABLE Triagem(
     Id INTEGER GENERATED ALWAYS AS IDENTITY, 
-    Quadro VARCHAR(50),
+    Quadro VARCHAR(50), 
 	Descricao VARCHAR(8000),
     CPF_paciente VARCHAR(50),
     CONSTRAINT Triagem_pk PRIMARY KEY (Id),
@@ -226,5 +226,8 @@ CREATE TABLE Enfermeiro_Triagem(
 -- DROP TABLE Triagem;  
 -- DROP TABLE Procedimento;
 -- DROP TABLE Usuario;
+
+
+
 
   
