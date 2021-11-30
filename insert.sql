@@ -1,35 +1,45 @@
 -- INSERTS (Paciente)
 -- Inserindo valores na tabela 'Paciente'
 
-INSERT INTO Paciente Values ('01234534', 'João Victor', '01/02/2001', 'Gripe, Infecção',
-897123123, 182738942, 'Muito Urgente');
+INSERT INTO Paciente (CPF, Nome, Data_de_nascimento, Historico_hospitalar, Latitude, Longitude)
+Values ('01234534', 'João Victor', '01/02/2001', 'Gripe, Infecção',
+897123123, 182738942);
 
-INSERT INTO Paciente Values ('95123456', 'Larissa Manoela', '01/03/2003', 'Gripe',
-897112334, 873718895, 'Pouco Urgente');
+INSERT INTO Paciente (CPF, Nome, Data_de_nascimento, Historico_hospitalar, Latitude, Longitude)
+Values ('95123456', 'Larissa Manoela', '01/03/2003', 'Gripe',
+897112334, 873718895);
 
-INSERT INTO Paciente Values ('212351244', 'Arnaldo César', '15/06/1951', 'Cirrose',
-537123123, 552738912, 'Muito Urgente');
+INSERT INTO Paciente (CPF, Nome, Data_de_nascimento, Historico_hospitalar, Latitude, Longitude)
+Values ('212351244', 'Arnaldo César', '15/06/1951', 'Cirrose',
+537123123, 552738912);
 
-INSERT INTO Paciente Values ('123124839', 'Ana Gabriela', '22/12/1996', 'Infecção alimentar',
-567123123, 123489127, 'Urgente');
+INSERT INTO Paciente (CPF, Nome, Data_de_nascimento, Historico_hospitalar, Latitude, Longitude)
+Values ('123124839', 'Ana Gabriela', '22/12/1996', 'Infecção alimentar',
+567123123, 123489127);
 
-INSERT INTO Paciente Values ('812312334', 'Maria da Dores', '01/02/2001', 'Malária',
-897123123, 182738952, 'Não Urgente');
+INSERT INTO Paciente (CPF, Nome, Data_de_nascimento, Historico_hospitalar, Latitude, Longitude)
+Values ('812312334', 'Maria da Dores', '01/02/2001', 'Malária',
+897123123, 182738952);
 
-INSERT INTO Paciente Values ('012412238', 'José Vicente', '30/07/1941', 'Câncer',
-323153123, 1687738916, 'Câncer');
+INSERT INTO Paciente (CPF, Nome, Data_de_nascimento, Historico_hospitalar, Latitude, Longitude)
+Values ('012412238', 'José Vicente', '30/07/1941', 'Câncer',
+323153123, 1687738916);
 
-INSERT INTO Paciente Values ('252342353', 'José Irineu', '27/05/1960', '',
-571531258, 1123123915, 'Muito Urgente');
+INSERT INTO Paciente (CPF, Nome, Data_de_nascimento, Historico_hospitalar, Latitude, Longitude)
+Values ('252342353', 'José Irineu', '27/05/1960', '',
+571531258, 1123123915);
 
-INSERT INTO Paciente Values ('123562238', 'Enzo Gabriel', '20/12/2020', 'Intoxicação',
-923233123, 1123129117, 'Não Urgente');
+INSERT INTO Paciente (CPF, Nome, Data_de_nascimento, Historico_hospitalar, Latitude, Longitude)
+Values ('123562238', 'Enzo Gabriel', '20/12/2020', 'Intoxicação',
+923233123, 1123129117);
 
-INSERT INTO Paciente Values ('1231231238', 'Laura Sophia', '14/04/2006', 'Gripe',
-323153129, 16867738916, 'Não Urgente');
+INSERT INTO Paciente (CPF, Nome, Data_de_nascimento, Historico_hospitalar, Latitude, Longitude)
+Values ('1231231238', 'Laura Sophia', '14/04/2006', 'Gripe',
+323153129, 16867738916);
 
-INSERT INTO Paciente Values ('012412239', 'Paula Beatriz', '25/03/2000', 'Covid-19',
-5123153121, 1256124334, 'Urgente');
+INSERT INTO Paciente (CPF, Nome, Data_de_nascimento, Historico_hospitalar, Latitude, Longitude)
+Values ('012412239', 'Paula Beatriz', '25/03/2000', 'Covid-19',
+5123153121, 1256124334);
 
 -- INSERTS (Profissional) 
 -- Inserindo valores na tabela 'Profissional'
@@ -37,48 +47,44 @@ INSERT INTO Paciente Values ('012412239', 'Paula Beatriz', '25/03/2000', 'Covid-
 INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo) --COORD
 VALUES ('518293812', 'Lourenço Bezerra', '20/08/1960', 0101);
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio, DataFim) --MED 
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim) --MED 
 VALUES ('1235938123', 'Mariana Cardoso', '27/11/1990', 0102,
-'518293812', '01/01/2020', '31/12/2021');
+'01/01/2020', '31/12/2021');
 
 INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo) --COORD
 VALUES ('532413722', 'Cristina Ferreira', '13/02/1986', 0403);
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio, DataFim)--MED
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim)--MED
 VALUES ('92123715', 'Bruna Vitória', '22/02/1986', 0103,
-'518293812', '01/01/2021', '31/12/2021');
+'01/01/2021', '31/12/2021');
 
 INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo) --COORD
-VALUES ('123592381', 'Marcos Batista', '11/03/1980', 0201,
-);
+VALUES ('123592381', 'Marcos Batista', '11/03/1980', 0201);
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio, DataFim) --MED
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim) --MED
 VALUES ('123593813', 'Luana Beatriz', '13/07/2000', 0202,
-'123592381', '05/02/2020', '05/02/2022');
+'05/02/2020', '05/02/2022');
 
 INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo) --COORD
-VALUES ('732425316', 'Bianca Peixoto', '12/09/1994', 0402, 
-'', '', '');
+VALUES ('732425316', 'Bianca Peixoto', '12/09/1994', 0402);
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio, DataFim) --MED
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim) --MED
 VALUES ('123593812', 'Carlos Eduardo', '16/03/1995', 0203,
-'123592381', '05/02/2020', '05/02/2022');
+'05/02/2020', '05/02/2022');
 
 INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo) --COORD
-VALUES ('879812387', 'Letícia Barros', '15/04/1990', 0301,
-'', '', '');
+VALUES ('879812387', 'Letícia Barros', '15/04/1990', 0301);
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio, DataFim) --MED
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim) --MED
 VALUES ('987123895', 'Alexandre Tenório', '12/09/1973', 0302,
-'879812387', '28/02/2021', '15/12/2021');
+'28/02/2021', '15/12/2021');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio, DataFim) --MED
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim) --MED
 VALUES ('891723798', 'Amanda Vitória', '01/12/2001', 0303,
-'879812387', '01/03/2021', '18/12/2021');
+'01/03/2021', '18/12/2021');
 
 INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo) --COORD
-VALUES ('632418755', 'Rodrigo Sampaio', '12/09/1979', 0401, 
-'', '', '');
+VALUES ('632418755', 'Rodrigo Sampaio', '12/09/1979', 0401);
 
 INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo) --COORD
 VALUES ('8719387230', 'Lauren Viviane', '05/03/1998', 0404);
@@ -87,93 +93,93 @@ INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo) --COORD
 VALUES ('2319823984', 'Pedro Guerra', '23/07/1972', 0500);
 
 INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo)--COORD
-VALUES '2314123345', 'Marcelo Vicente', '01/02/1985', 0501);
+VALUES ('2314123345', 'Marcelo Vicente', '01/02/1985', 0501);
 
 INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo)--COORD
 VALUES ('2355698873', 'Juliana Melo', '08/12/1983', 0502);
  
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio, DataFim) --ENF
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim) --ENF
 VALUES ('2131237894', 'Marcio Lombardi', '09/04/1974', 0311,
-'879812387', '01/01/2021', '01/01/2022');
+'01/01/2021', '01/01/2022');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio, DataFim) --ENF
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim) --ENF
 VALUES ('1318644223', 'Gustavo Lima', '11/03/1997', 0312,
-'879812387', '01/01/2021', '01/01/2022');
+'01/01/2021', '01/01/2022');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio, DataFim) --ENF
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim) --ENF
 VALUES ('8712783782', 'Mirella Silva', '22/07/1993', 0313,
-'879812387', '01/02/2020', '01/12/2021');
+'01/02/2020', '01/12/2021');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio, DataFim) --ENF
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim) --ENF
 VALUES ('8978912374', 'José Lourenço', '29/01/1972', 0314,
-'879812387', '01/03/2018', '01/05/2023');
+'01/03/2018', '01/05/2023');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio, DataFim) --ENF
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim) --ENF
 VALUES ('8712378972', 'Vitória Pereira', '25/08/1999', 0315,
-'879812387', '01/01/2021', '01/01/2022');
+'01/01/2021', '01/01/2022');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio, DataFim) --ENF
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim) --ENF
 VALUES ('8273891723', 'Bruna Andrade', '21/09/1996', 0316,
-'879812387', '01/01/2021', '01/01/2022');
+'01/01/2021', '01/01/2022');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio, DataFim) --ENF
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim) --ENF
 VALUES ('1923839455', 'Saulo Paes', '15/04/1993', 0317,
-'879812387', '01/03/2020', '01/03/2022');
+'01/03/2020', '01/03/2022');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio, DataFim) --ENF
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim) --ENF
 VALUES ('2389908523', 'Dionísio Antunes', '30/01/1979', 0318,
-'879812387', '01/01/2018', '31/12/2021');
+'01/01/2018', '31/12/2021');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio, DataFim) --ENF
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim) --ENF
 VALUES ('8972731234', 'Giovanna Santana', '13/11/1998', 0319,
-'879812387', '01/01/2021', '01/01/2023');
+'01/01/2021', '01/01/2023');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio, DataFim) --ENF
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim) --ENF
 VALUES ('9081234985', 'Alanna Marcela', '20/12/1989', 1310,
-'879812387', '01/01/2020', '01/06/2022');
+'01/01/2020', '01/06/2022');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio) -- ATEND 
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio) -- ATEND 
 VALUES ('70425690156', 'Pedro Paulo', '18/06/1985', 2458,
-'8719387230');
+'01/01/2021');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio) -- ATEND 
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio) -- ATEND 
 VALUES ('90587910402', 'Maria de Lurdes', '17/09/1971', 2102,
-'8719387230', '20/11/2021');
+'20/11/2021');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio) -- ATEND 
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio) -- ATEND 
 VALUES ('60171233320', 'Lilia Cabral', '08/10/1990', 2222,
-'8719387230', '20/11/2021');
+'20/11/2021');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio) -- ATEND 
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio) -- ATEND 
 VALUES ('70425661158', 'Renata Cristina', '11/01/1975', 2701,
-'8719387230', '20/11/2021');
+'20/11/2021');
 
-INSERT INTO Profissional(CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio) -- ATEND 
+INSERT INTO Profissional(CPF, Nome, Data_de_nascimento, Codigo, DataInicio) -- ATEND 
 VALUES ('50541498632', 'Igor Jordão', '19/06/1986', 2457,
-'8719387230', '20/11/2021');
+'20/11/2021');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio) -- ATEND 
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio) -- ATEND 
 VALUES ('50241798431', 'Erica Sales', '27/03/1991', 2596,
-'8719387230');
+'03/03/2020');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio) -- ATEND 
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio) -- ATEND 
 VALUES ('72025690184', 'Luisa Alcantara', '22/02/1988', 2963,
-'8719387230', '20/11/2021');
+'20/11/2021');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio) -- ATEND 
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio) -- ATEND 
 VALUES ('49036078413', 'Eduarda Vasconcelos', '01/09/1995', 2006,
-'8719387230', '20/11/2021');
+'20/11/2021');
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, CPF_Coordenador, DataInicio) -- ATEND 
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio) -- ATEND 
 VALUES ('50174322601', 'Ricardo Melo da Silva', '18/01/1996', 2835,
-'8719387230', '20/11/2021');
+'20/11/2021');
 
 
 -- INSERTS (Cartão_SUS)
 -- Inserindo valores na tabela 'Cartão_SUS'
 
 INSERT INTO Cartao_SUS VALUES ('705210609029630', 'Masculino',' 01/02/2001' , '01234534');
-INSERT INTO Cartao_SUS VALUES ('205699870421265', 'Feminino', ,'01/03/2003', '95123456');
+INSERT INTO Cartao_SUS VALUES ('205699870421265', 'Feminino','01/03/2003', '95123456');
 INSERT INTO Cartao_SUS VALUES ('405629741027100', 'Masculino','15/06/1951' , '212351244');
 INSERT INTO Cartao_SUS VALUES ('102335501742238', 'Feminino', '22/12/1996', '123124839');
 INSERT INTO Cartao_SUS VALUES ('305411137956616', 'Feminino', '01/02/2001', '812312334');
@@ -187,34 +193,44 @@ INSERT INTO Cartao_SUS VALUES ('111203412668741', 'Feminino', '25/03/2000', '012
 -- INSERTS (Triagem)
 -- Inserindo valores na tabela 'Triagem'
 
-INSERT INTO Triagem VALUES ('Não urgente', 'O paciente apresenta 
+INSERT INTO Triagem (Quadro, Descricao, CPF_paciente) 
+VALUES ('Não urgente', 'O paciente apresenta 
 leves dores abdominais', '01234534');
 
-INSERT INTO Triagem VALUES ('Pouco urgente', 'A paciente apresenta 
+INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+VALUES ('Pouco urgente', 'A paciente apresenta 
 fortes dores de cabeça', '95123456');
 
-INSERT INTO Triagem VALUES ('Muito urgente', 'O paciente apresenta
+INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+VALUES ('Muito urgente', 'O paciente apresenta
 grave quadro de COVID19', '212351244');
 
-INSERT INTO Triagem VALUES ('Urgente', 'A paciente apresenta
+INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+VALUES ('Urgente', 'A paciente apresenta
 dores devido a intoxicação', '123124839');
 
-INSERT INTO Triagem VALUES ('Não urgente', 'A paciente não apresenta
+INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+VALUES ('Não urgente', 'A paciente não apresenta
 sintomas', '812312334');
 
-INSERT INTO Triagem VALUES ('Não urgente', 'O paciente realizará
-exames de rotina', '012419238');
+INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+VALUES ('Não urgente', 'O paciente realizará
+exames de rotina', '012412238');
 
-INSERT INTO Triagem VALUES ('Muito urgente', 'O paciente apresenta
+INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+VALUES ('Muito urgente', 'O paciente apresenta
 dores intensas', '252342353');
 
-INSERT INTO Triagem VALUES ('Não urgente', 'O paciente apresenta
+INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+VALUES ('Não urgente', 'O paciente apresenta
 leves dores intestinais', '123562238');
 
-INSERT INTO Triagem VALUES ('Não urgente', 'A paciente não apresenta
+INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+VALUES ('Não urgente', 'A paciente não apresenta
 graves sintomas', '1231231238');
 
-INSERT INTO Triagem VALUES ('Urgente', 'A paciente realizou testes 
+INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+VALUES ('Urgente', 'A paciente realizou testes 
 e sente leves dores', '012412239');
 
 -- INSERTS (Coordenador)
@@ -234,16 +250,16 @@ INSERT INTO Coordenador VALUES ('2355698873', 'Pediatria');
 -- INSERTS (Acompanhante)
 -- Inserindo valores na tabela 'Acompanhante'
 
-INSERT INTO Acompanhante (CPF_Paciente, CPF, Nome) VALUES ('01234534','55740120362','André Luiz');
-INSERT INTO Acompanhante (CPF_Paciente, CPF, Nome) VALUES ('95123456', '90780230403','Marta Sampaio');
-INSERT INTO Acompanhante (CPF_Paciente, CPF, Nome)VALUES ('212351244','40260946124','Rodrigo Gilbert');
-INSERT INTO Acompanhante (CPF_Paciente, CPF, Nome)VALUES ('123124839','80610234687','Maria Luisa');
-INSERT INTO Acompanhante (CPF_Paciente, CPF, Nome)VALUES ('812312334','70529540409','Vitor Anselmo');
-INSERT INTO Acompanhante (CPF_Paciente, CPF, Nome) VALUES ('012412238','10890463322','Pedro Victor');
-INSERT INTO Acompanhant  (CPF_Paciente, CPF, Nome)VALUES ('252342353','67822300018','Olivia Rodrigo');
-INSERT INTO Acompanhante (CPF_Paciente, CPF, Nome)VALUES ('123562238','24495071356','Lucas dos Santos');
-INSERT INTO Acompanhante (CPF_Paciente, CPF, Nome)VALUES ('1231231238','32014796325','Marina Rui Barbosa');
-INSERT INTO Acompanhante (CPF_Paciente, CPF, Nome) VALUES ('012412239','15975385200','Milena da Silva');
+INSERT INTO Acompanhante (CPF_do_paciente, CPF, Nome) VALUES ('01234534','55740120362','André Luiz');
+INSERT INTO Acompanhante (CPF_do_paciente, CPF, Nome) VALUES ('95123456', '90780230403','Marta Sampaio');
+INSERT INTO Acompanhante (CPF_do_paciente, CPF, Nome) VALUES ('212351244','40260946124','Rodrigo Gilbert');
+INSERT INTO Acompanhante (CPF_do_paciente, CPF, Nome) VALUES ('123124839','80610234687','Maria Luisa');
+INSERT INTO Acompanhante (CPF_do_paciente, CPF, Nome) VALUES ('812312334','70529540409','Vitor Anselmo');
+INSERT INTO Acompanhante (CPF_do_paciente, CPF, Nome) VALUES ('012412238','10890463322','Pedro Victor');
+INSERT INTO Acompanhante (CPF_do_paciente, CPF, Nome) VALUES ('252342353','67822300018','Olivia Rodrigo');
+INSERT INTO Acompanhante (CPF_do_paciente, CPF, Nome) VALUES ('123562238','24495071356','Lucas dos Santos');
+INSERT INTO Acompanhante (CPF_do_paciente, CPF, Nome) VALUES ('1231231238','32014796325','Marina Rui Barbosa');
+INSERT INTO Acompanhante (CPF_do_paciente, CPF, Nome) VALUES ('012412239','15975385200','Milena da Silva');
 
 
 
@@ -260,7 +276,7 @@ INSERT INTO Procedimento VALUES ('Exames de rotina simples', '21/06/1990');
 INSERT INTO Procedimento VALUES ('Exames e medicação', '07/07/2000');
 INSERT INTO Procedimento VALUES ('Exame e medicação vermicida', '12/07/2000');
 INSERT INTO Procedimento VALUES ('Medicação', '06/08/2000');
-INSERT INTO Procedimento VALUES ('Exames respiratórios e medicação', '20/03/2020');
+INSERT INTO Procedimento VALUES ('Exames respiratórios', '20/03/2020');
 
 -- INSERTS (Email_Paciente)
 -- Inserindo valores na tabela 'Email_Paciente'
@@ -332,7 +348,8 @@ INSERT INTO Telefone_Profissional VALUES ('2355698873', '+558796517');
 -- INSERTS (Procedimento_Paciente)
 -- Inserindo valores na tabela 'Procedimento_Paciente'
 INSERT INTO Procedimento_Paciente VALUES ('01234534', 'Exames abdominais e medicação', '21/01/2021', '01:20');
-INSERT INTO Procedimento_Paciente VALUES ('95123456', 'Exames de averiguação de lesões cranianas', '22/01/2021', '01:40');
+INSERT INTO Procedimento_Paciente VALUES ('95123456', 'Exames de averiguação de lesões cranianas, 
+tratamento e medicação', '22/01/2021', '01:40');
 INSERT INTO Procedimento_Paciente VALUES ('212351244', 'Intubação orotraqueal', '04/02/2021', '03:00');
 INSERT INTO Procedimento_Paciente VALUES ('123124839', 'Internação', '09/02/2021', '24:00');
 INSERT INTO Procedimento_Paciente VALUES ('812312334', 'Exames respiratórios e medicação', '15/03/2021', '01:15');
@@ -345,17 +362,17 @@ INSERT INTO Procedimento_Paciente VALUES ('012412239', 'Exames respiratórios', 
 -- INSERTS (Procedimento_Profissional)
 -- Inserindo valores na tabela 'Procedimento_Profissional'
 
-INSERT INTO Procedimento_Profissional VALUES ('2131237894','Exames abdominais e medicação', '25/09/2021', 5, '3:25');
+INSERT INTO Procedimento_Profissional VALUES ('2131237894','Exames abdominais e medicação', 5, '25/09/2021', '3:25');
 INSERT INTO Procedimento_Profissional VALUES ('1318644223','Exames de averiguação de lesões cranianas, 
-tratamento e medicação', '23/01/2021', 8,'6:00');
-INSERT INTO Procedimento_Profissional VALUES ('8712783782','Exames de rotina simples', '10/08/2021', 4, '2:31');
-INSERT INTO Procedimento_Profissional VALUES ('8978912374','Internação', '03/10/2021', 2,'4:10');
-INSERT INTO Procedimento_Profissional VALUES ('8712378972','Exames de rotina simples', '30/07/2021', 5,'3:42');
-INSERT INTO Procedimento_Profissional VALUES ('8273891723','Exames de rotina simples', '11/09/2021', 2,'1:25');
-INSERT INTO Procedimento_Profissional VALUES ('1923839455','Medicação', '05/11/2021', 10,'4:17');
-INSERT INTO Procedimento_Profissional VALUES ('2389908523','Medicação', '12/12/2021', 8,'3:08');
-INSERT INTO Procedimento_Profissional VALUES ('8972731234','Exames de rotina simples', '27/10/2021', 3,'3:00');
-INSERT INTO Procedimento_Profissional VALUES ('9081234985','Internação', '14/08/2021', 6,'8:00');
+tratamento e medicação', 8, '23/01/2021', '6:00');
+INSERT INTO Procedimento_Profissional VALUES ('8712783782','Intubação orotraqueal', 4, '10/08/2021', '2:31');
+INSERT INTO Procedimento_Profissional VALUES ('8978912374','Internação', 2, '03/10/2021', '4:10');
+INSERT INTO Procedimento_Profissional VALUES ('8712378972','Exames respiratórios e medicação', 5, '30/07/2021', '3:42');
+INSERT INTO Procedimento_Profissional VALUES ('8273891723','Exames de rotina simples', 2, '11/09/2021', '1:25');
+INSERT INTO Procedimento_Profissional VALUES ('1923839455','Exames e medicação', 10, '05/11/2021', '4:17');
+INSERT INTO Procedimento_Profissional VALUES ('2389908523','Exame e medicação vermicida', 8,'12/12/2021', '3:08');
+INSERT INTO Procedimento_Profissional VALUES ('8972731234','Medicação', 3,'27/10/2021', '3:00');
+INSERT INTO Procedimento_Profissional VALUES ('9081234985','Exames respiratórios', 6,'14/08/2021', '8:00');
 
 -- INSERTS (Atendente)
 -- Inserindo valores na tabela 'Atendente'
@@ -374,16 +391,16 @@ INSERT INTO Atendente VALUES ('891723798','Recepção');
 -- INSERTS (Medico)
 -- Inserindo valores na tabela 'Medico'
 
-INSERT INTO MEDICO VALUES ('518293812', 'CRM-9083')
-INSERT INTO MEDICO VALUES ('1235938123', 'CRM-1204')
-INSERT INTO MEDICO VALUES ('92123715', 'CRM-9834')
-INSERT INTO MEDICO VALUES ('123593813', 'CRM-8712')
-INSERT INTO MEDICO VALUES ('123593812', 'CRM-0939')
-INSERT INTO MEDICO VALUES ('987123895', 'CRM-7354');
-INSERT INTO MEDICO VALUES ('891723798', 'CRM-9384');
-INSERT INTO MEDICO VALUES ('2319823984', 'CRM-8728');
-INSERT INTO MEDICO VALUES ('2314123345', 'CRM-8787');
-INSERT INTO MEDICO VALUES ('2355698873', 'CRM-1823');
+INSERT INTO Medico VALUES ('518293812', 'CRM-9083');
+INSERT INTO Medico VALUES ('1235938123', 'CRM-1204');
+INSERT INTO Medico VALUES ('92123715', 'CRM-9834');
+INSERT INTO Medico VALUES ('123593813', 'CRM-8712');
+INSERT INTO Medico VALUES ('123593812', 'CRM-0939');
+INSERT INTO Medico VALUES ('987123895', 'CRM-7354');
+INSERT INTO Medico VALUES ('891723798', 'CRM-9384');
+INSERT INTO Medico VALUES ('2319823984', 'CRM-8728');
+INSERT INTO Medico VALUES ('2314123345', 'CRM-8787');
+INSERT INTO Medico VALUES ('2355698873', 'CRM-1823');
 
 -- INSERTS (Enfermeiro)
 -- Inserindo valores na tabela 'Enfermeiro'
@@ -402,40 +419,66 @@ INSERT INTO Enfermeiro VALUES ('9081234985', 'CIF-8923');
 -- INSERTS (Enfermeiro_Triagem)
 -- Inserindo valores na tabela 'Enfermeiro_Triagem'
 
-INSERT INTO Enfermeiro_Triagem VALUES ('2131237894', 'CIF-9781');
-INSERT INTO Enfermeiro_Triagem VALUES ('1318644223', 'CIF-9831');
-INSERT INTO Enfermeiro_Triagem VALUES ('8712783782', 'CIF-1234');
-INSERT INTO Enfermeiro_Triagem VALUES ('8978912374', 'CIF-9888');
-INSERT INTO Enfermeiro_Triagem VALUES ('8712378972', 'CIF-8783');
-INSERT INTO Enfermeiro_Triagem VALUES ('8273891723', 'CIF-4892');
-INSERT INTO Enfermeiro_Triagem VALUES ('1923839455', 'CIF-7894');
-INSERT INTO Enfermeiro_Triagem VALUES ('2389908523', 'CIF-9821');
-INSERT INTO Enfermeiro_Triagem VALUES ('8972731234', 'CIF-8734');
-INSERT INTO Enfermeiro_Triagem VALUES ('9081234985', 'CIF-8923');
+INSERT INTO Enfermeiro_Triagem VALUES ('2131237894', 1);
+INSERT INTO Enfermeiro_Triagem VALUES ('1318644223', 2);
+INSERT INTO Enfermeiro_Triagem VALUES ('8712783782', 3);
+INSERT INTO Enfermeiro_Triagem VALUES ('8978912374', 4);
+INSERT INTO Enfermeiro_Triagem VALUES ('8712378972', 5);
+INSERT INTO Enfermeiro_Triagem VALUES ('8273891723', 6);
+INSERT INTO Enfermeiro_Triagem VALUES ('1923839455', 7);
+INSERT INTO Enfermeiro_Triagem VALUES ('2389908523', 8);
+INSERT INTO Enfermeiro_Triagem VALUES ('8972731234', 9);
+INSERT INTO Enfermeiro_Triagem VALUES ('9081234985', 10);
 
 
+-- UPDATES DE PACIENTE
+UPDATE Paciente SET TriagemID = 1 WHERE CPF = '01234534';
+UPDATE Paciente SET TriagemID = 2 WHERE CPF = '95123456';
+UPDATE Paciente SET TriagemID = 3 WHERE CPF = '212351244';
+UPDATE Paciente SET TriagemID = 4 WHERE CPF = '123124839';
+UPDATE Paciente SET TriagemID = 5 WHERE CPF = '812312334';
+UPDATE Paciente SET TriagemID = 6 WHERE CPF = '012412238';
+UPDATE Paciente SET TriagemID = 7 WHERE CPF = '252342353';
+UPDATE Paciente SET TriagemID = 8 WHERE CPF = '123562238';
+UPDATE Paciente SET TriagemID = 9 WHERE CPF = '1231231238';
+UPDATE Paciente SET TriagemID = 10 WHERE CPF = '012412239';
 
- -- UPDATES 
-
--- Atualização do número de um profissional 
-
-UPDATE Telefone_Profissional SET Telefone = '8799550324' WHERE CPF = '01234534';
-
--- Atualização do quadro médico de um paciente 
-
-UPDATE Triagem SET Triagem SET Quadro = 'Pouco Urgente', Descricao = 'O paciente passou a apresentar sintomas brandos da doenças' WHERE CPF_Paciente = '212351244' AND Quadro = 'Muito Urgente';
-
-UPDATE Paciente SET Quadro_Triagem = 'Pouco Urgente' WHERE CPF = '212351244';
+-- UPDATES DE PROFISSIONAL
+UPDATE Profissional SET CPF_Coordenador = '518293812' WHERE CPF = '1235938123';
+UPDATE Profissional SET CPF_Coordenador = '518293812' WHERE CPF = '92123715';
+UPDATE Profissional SET CPF_Coordenador = '518293812' WHERE CPF = '123593813';
+UPDATE Profissional SET CPF_Coordenador = '518293812' WHERE CPF = '123593812';
+UPDATE Profissional SET CPF_Coordenador = '518293812' WHERE CPF = '987123895';
+UPDATE Profissional SET CPF_Coordenador = '518293812' WHERE CPF = '891723798';
+UPDATE Profissional SET CPF_Coordenador = '879812387' WHERE CPF = '2131237894';
+UPDATE Profissional SET CPF_Coordenador = '879812387' WHERE CPF = '1318644223';
+UPDATE Profissional SET CPF_Coordenador = '879812387' WHERE CPF = '8712783782';
+UPDATE Profissional SET CPF_Coordenador = '879812387' WHERE CPF = '8978912374';
+UPDATE Profissional SET CPF_Coordenador = '879812387' WHERE CPF = '8712378972';
+UPDATE Profissional SET CPF_Coordenador = '879812387' WHERE CPF = '8273891723';
+UPDATE Profissional SET CPF_Coordenador = '879812387' WHERE CPF = '1923839455';
+UPDATE Profissional SET CPF_Coordenador = '879812387' WHERE CPF = '2389908523';
+UPDATE Profissional SET CPF_Coordenador = '879812387' WHERE CPF = '8972731234';
+UPDATE Profissional SET CPF_Coordenador = '879812387' WHERE CPF = '9081234985';
+UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '70425690156';
+UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '90587910402';
+UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '60171233320';
+UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '70425661158';
+UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '50541498632';
+UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '50241798431';
+UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '72025690184';
+UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '49036078413';
+UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '50174322601';
 
 
 -- DELETES 
 
 -- DELETE DE UM PROFISSIONAL (ATENDENTE)
 
-DELETE FROM Atendente WHERE CPF = '90587910402' 
-DELETE FROM Profissional WHERE CPF = '90587910402' 
+DELETE FROM Atendente WHERE CPF = '90587910402';
+DELETE FROM Profissional WHERE CPF = '90587910402'; 
 
 
 --- DELETE DE UM ACOMPANHANTE
 
-DELETE FROM Acompanhante WHERE CPF_Paciente = '812312334' AND CPF = '70529540409'
+DELETE FROM Acompanhante WHERE CPF_do_paciente = '812312334' AND CPF = '70529540409';
