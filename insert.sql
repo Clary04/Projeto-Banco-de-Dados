@@ -47,7 +47,7 @@ Values ('012412239', 'Paula Beatriz', '25/03/2000', 'Covid-19',
 INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo) --COORD
 VALUES ('518293812', 'Lourenço Bezerra', '20/08/1960', 0101);
 
-INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo,DataInicio, DataFim) --MED 
+INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio, DataFim) --MED 
 VALUES ('1235938123', 'Mariana Cardoso', '27/11/1990', 0102,
 '01/01/2020', '31/12/2021');
 
@@ -424,53 +424,26 @@ INSERT INTO Enfermeiro_Triagem VALUES ('1318644223', 2);
 INSERT INTO Enfermeiro_Triagem VALUES ('8712783782', 3);
 INSERT INTO Enfermeiro_Triagem VALUES ('8978912374', 4);
 INSERT INTO Enfermeiro_Triagem VALUES ('8712378972', 5);
-INSERT INTO Enfermeiro_Triagem VALUES ('8273891723', 12);
-INSERT INTO Enfermeiro_Triagem VALUES ('1923839455', 13);
-INSERT INTO Enfermeiro_Triagem VALUES ('2389908523', 14);
-INSERT INTO Enfermeiro_Triagem VALUES ('8972731234', 15);
-INSERT INTO Enfermeiro_Triagem VALUES ('9081234985', 16);
+INSERT INTO Enfermeiro_Triagem VALUES ('8273891723', 6);
+INSERT INTO Enfermeiro_Triagem VALUES ('1923839455', 7);
+INSERT INTO Enfermeiro_Triagem VALUES ('2389908523', 8);
+INSERT INTO Enfermeiro_Triagem VALUES ('8972731234', 9);
+INSERT INTO Enfermeiro_Triagem VALUES ('9081234985', 10);
 
 
-
- -- UPDATES 
-
--- Atualização do número de um profissional 
-
-UPDATE Telefone_Profissional SET Telefone = '+558799550324' WHERE CPF = '123592381';
-
--- Atualização do quadro médico de um paciente 
-
-UPDATE Triagem SET Quadro = 'Pouco Urgente', Descricao = 'O paciente passou a apresentar sintomas brandos da doenças' WHERE CPF_Paciente = '212351244' AND Quadro = 'Muito Urgente';
-
-UPDATE Paciente SET Historico_hospitalar = 'Cirrose hepática' WHERE CPF = '212351244';
-
-
--- DELETES 
-
--- DELETE DE UM PROFISSIONAL (ATENDENTE)
-
-DELETE FROM Atendente WHERE CPF = '90587910402';
-DELETE FROM Profissional WHERE CPF = '90587910402'; 
-
-
---- DELETE DE UM ACOMPANHANTE
-
-DELETE FROM Acompanhante WHERE CPF_do_paciente = '812312334' AND CPF = '70529540409';
-
-
--- updates de paciente
+-- UPDATES DE PACIENTE
 UPDATE Paciente SET TriagemID = 1 WHERE CPF = '01234534';
 UPDATE Paciente SET TriagemID = 2 WHERE CPF = '95123456';
 UPDATE Paciente SET TriagemID = 3 WHERE CPF = '212351244';
 UPDATE Paciente SET TriagemID = 4 WHERE CPF = '123124839';
 UPDATE Paciente SET TriagemID = 5 WHERE CPF = '812312334';
-UPDATE Paciente SET TriagemID = 12 WHERE CPF = '012412238';
-UPDATE Paciente SET TriagemID = 13 WHERE CPF = '252342353';
-UPDATE Paciente SET TriagemID = 14 WHERE CPF = '123562238';
-UPDATE Paciente SET TriagemID = 15 WHERE CPF = '1231231238';
-UPDATE Paciente SET TriagemID = 16 WHERE CPF = '012412239';
+UPDATE Paciente SET TriagemID = 6 WHERE CPF = '012412238';
+UPDATE Paciente SET TriagemID = 7 WHERE CPF = '252342353';
+UPDATE Paciente SET TriagemID = 8 WHERE CPF = '123562238';
+UPDATE Paciente SET TriagemID = 9 WHERE CPF = '1231231238';
+UPDATE Paciente SET TriagemID = 10 WHERE CPF = '012412239';
 
--- updates de profissional
+-- UPDATES DE PROFISSIONAL
 UPDATE Profissional SET CPF_Coordenador = '518293812' WHERE CPF = '1235938123';
 UPDATE Profissional SET CPF_Coordenador = '518293812' WHERE CPF = '92123715';
 UPDATE Profissional SET CPF_Coordenador = '518293812' WHERE CPF = '123593813';
@@ -493,6 +466,19 @@ UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '60171233320'
 UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '70425661158';
 UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '50541498632';
 UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '50241798431';
-UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = 'Luisa Alcantara';
-UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = 'Eduarda Vasconcelos';
-UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = 'Ricardo Melo da Silva';
+UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '72025690184';
+UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '49036078413';
+UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '50174322601';
+
+
+-- DELETES 
+
+-- DELETE DE UM PROFISSIONAL (ATENDENTE)
+
+DELETE FROM Atendente WHERE CPF = '90587910402';
+DELETE FROM Profissional WHERE CPF = '90587910402'; 
+
+
+--- DELETE DE UM ACOMPANHANTE
+
+DELETE FROM Acompanhante WHERE CPF_do_paciente = '812312334' AND CPF = '70529540409';
