@@ -1,7 +1,0 @@
-    --   1 (um)   |  Select From Where em uma única tabela;
-    --   1 (um)   |  Order by com duas colunas;
-    --   1 (um)   |  Junção com duas tabelas;
-    --   1 (um)   |  Junção com três tabelas;
-    --   1 (um)   |  Group by;
-    --   1 (um)   |  Group by e Having;
-    --   1 (um)   |  (Left, Right ou Full) Outer Join.
