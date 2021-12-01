@@ -25,10 +25,10 @@
 	SELECT prof.Nome, protel.Telefone, proemail.Email FROM Profissional prof, 
 	Telefone_Profissional protel, Email_Profissional proemail WHERE prof.CPF = protel.CPF and prof.CPF = proemail.CPF;
 
-    --   1 (um)   |  Group by;
 
 
 	
+
 
 
 	-- OBTENDO O CPF E O ID DOS PACIENTES ENTRE OS 100 PRIMEIROS COM O QUADRO 'Muito urgente'
@@ -47,7 +47,6 @@
 	ORDER BY Paciente.CPF;
 
 	
-
 
 
 
