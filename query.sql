@@ -26,13 +26,27 @@
 	Telefone_Profissional protel, Email_Profissional proemail WHERE prof.CPF = protel.CPF and prof.CPF = proemail.CPF;
 
 
-    --   1 (um)   |  Group by;
-    --   1 (um)   |  Group by e Having;
-    --   1 (um)   |  (Left, Right ou Full) Outer Join.
-
 
 	
 
+
+
+	-- OBTENDO O CPF E O ID DOS PACIENTES ENTRE OS 100 PRIMEIROS COM O QUADRO 'Muito urgente'
+	SELECT tr.CPF_paciente, tr.Id
+	FROM Triagem tr
+	WHERE Quadro = 'Muito urgente'
+	GROUP BY tr.Id
+	HAVING tr.Id  BETWEEN 1 and 100
+	ORDER BY tr.Id ASC;
+
+
+	-- OBTENDO O NOME DO PACIENTE E O NOME DO ACOMPANHANTE (Se tiver) 
+	SELECT Paciente.Nome AS nome_paciente, Acompanhante.Nome AS nome_acompanhate
+	From Paciente 
+	FULL OUTER JOIN Acompanhante ON Paciente.CPF = Acompanhante.CPF_do_paciente
+	ORDER BY Paciente.CPF;
+
+	
 
 
 
