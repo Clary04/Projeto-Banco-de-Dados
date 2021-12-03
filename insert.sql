@@ -174,6 +174,24 @@ INSERT INTO Profissional (CPF, Nome, Data_de_nascimento, Codigo, DataInicio) -- 
 VALUES ('50174322601', 'Ricardo Melo da Silva', '18/01/1996', 2835,
 '20/11/2021');
 
+-- INSERTS (Usuario)
+
+
+-- Inserindo Pacientes na trabela 'Usuario' 
+
+INSERT INTO Usuario values ('jvitor', 'admin@123', '01234534');
+INSERT INTO Usuario values ('lmanu', 'admin@456', '95123456');
+INSERT INTO Usuario values ('arnaldo', 'admin@789', '212351244');
+INSERT INTO Usuario values ('anagabi', 'admin@1011', '123124839');
+INSERT INTO Usuario values ('mariad', 'admin@1213', '812312334');
+INSERT INTO Usuario values ('jvicente', 'admin@1415', '012412238');
+INSERT INTO Usuario values ('jirineu', 'admin@1617', '252342353');
+INSERT INTO Usuario values ('enzo', 'admin@1819', '123562238');
+INSERT INTO Usuario values ('lsophia', 'admin@1920', '1231231238');
+INSERT INTO Usuario values ('pbeatriz', 'admin@2021', '012412239');
+
+-- Inserindo Profissionais na tabela 'Usuario'
+
 
 -- INSERTS (Cartão_SUS)
 -- Inserindo valores na tabela 'Cartão_SUS'
@@ -193,48 +211,48 @@ INSERT INTO Cartao_SUS VALUES ('111203412668741', 'Feminino', '25/03/2000', '012
 -- INSERTS (Triagem)
 -- Inserindo valores na tabela 'Triagem'
 
-INSERT INTO Triagem (Quadro, Descricao, CPF_paciente) 
+INSERT INTO Triagem (Quadro, Descricao) 
 VALUES ('Não urgente', 'O paciente apresenta 
-leves dores abdominais', '01234534');
+leves dores abdominais');
 
-INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+INSERT INTO Triagem (Quadro, Descricao)
 VALUES ('Pouco urgente', 'A paciente apresenta 
-fortes dores de cabeça', '95123456');
+fortes dores de cabeça');
 
-INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+INSERT INTO Triagem (Quadro, Descricao)
 VALUES ('Muito urgente', 'O paciente apresenta
-grave quadro de COVID19', '212351244');
+grave quadro de COVID19');
 
-INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+INSERT INTO Triagem (Quadro, Descricao)
 VALUES ('Urgente', 'A paciente apresenta
-dores devido a intoxicação', '123124839');
+dores devido a intoxicação');
 
-INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+INSERT INTO Triagem (Quadro, Descricao)
 VALUES ('Não urgente', 'A paciente não apresenta
-sintomas', '812312334');
+sintomas');
 
-INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+INSERT INTO Triagem (Quadro, Descricao)
 VALUES ('Não urgente', 'O paciente realizará
-exames de rotina', '012412238');
+exames de rotina');
 
-INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+INSERT INTO Triagem (Quadro, Descricao)
 VALUES ('Muito urgente', 'O paciente apresenta
-dores intensas', '252342353');
+dores intensas');
 
-INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+INSERT INTO Triagem (Quadro, Descricao)
 VALUES ('Não urgente', 'O paciente apresenta
-leves dores intestinais', '123562238');
+leves dores intestinais');
 
-INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+INSERT INTO Triagem (Quadro, Descricao)
 VALUES ('Não urgente', 'A paciente não apresenta
-graves sintomas', '1231231238');
+graves sintomas');
 
-INSERT INTO Triagem (Quadro, Descricao, CPF_paciente)
+INSERT INTO Triagem (Quadro, Descricao)
 VALUES ('Urgente', 'A paciente realizou testes 
-e sente leves dores', '012412239');
+e sente leves dores');
 
 -- INSERTS (Coordenador)
--- Inserindo valores na tabela 'Corrdenador'
+-- Inserindo valores na tabela 'Coordenador'
 
 INSERT INTO Coordenador VALUES ('518293812', 'Medicina');
 INSERT INTO Coordenador VALUES ('123592381', 'Administrativo');

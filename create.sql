@@ -23,18 +23,20 @@ CREATE TABLE Profissional(
 );
 
 -- Usuario 
--- CREATE TABLE Usuario(
---     Login_user VARCHAR(50),
---     Senha VARCHAR(50),
---     CONSTRAINT Usuario_pk (Login_user)
--- );
+ CREATE TABLE Usuario(
+    Login_user VARCHAR(50),
+    Senha VARCHAR(50),
+	CPF_Paciente varchar(50),
+	CPF_Profissional varchar(50),
+    CONSTRAINT Usuario_pk PRIMARY KEY(Login_user)
+ );
 
 -- Alter Usuario  
 
-/*ALTER TABLE Usuario
+ ALTER TABLE Usuario
 
-ADD CONSTRAINT Usuario_Paciente_fk FOREIGN KEY (CPF_Paciente) REFERENCES Paciente(CPF),
-ADD CONSTRAINT Usuario_Profissional_fk FOREIGN KEY (CPF_Profissional) REFERENCES Profissional (CPF);*/
+  ADD CONSTRAINT Usuario_Paciente_fk FOREIGN KEY (CPF_Paciente) REFERENCES Paciente(CPF),
+  ADD CONSTRAINT Usuario_Profissional_fk FOREIGN KEY (CPF_Profissional) REFERENCES Profissional (CPF);
 
 
 -- Cartao_Sus 
@@ -54,9 +56,7 @@ CREATE TABLE Triagem(
     Id INTEGER GENERATED ALWAYS AS IDENTITY, 
     Quadro VARCHAR(50), 
 	Descricao VARCHAR(8000),
-    CPF_paciente VARCHAR(50),
-    CONSTRAINT Triagem_pk PRIMARY KEY (Id),
-    CONSTRAINT Triagem_Paciente_fk FOREIGN KEY (CPF_paciente) REFERENCES Paciente(CPF)
+    CONSTRAINT Triagem_pk PRIMARY KEY (Id)
 );
 
 -- ALTER Paciente
@@ -218,6 +218,8 @@ CREATE TABLE Enfermeiro_Triagem(
 -- DROP TABLE Medico;
 -- DROP TABLE Enfermeiro;
  
+ 
+-- DROP TABLE Usuario;
 -- DROP TABLE Profissional CASCADE;
 -- DROP TABLE Coordenador;
 -- DROP TABLE Cartao_SUS;
@@ -225,9 +227,8 @@ CREATE TABLE Enfermeiro_Triagem(
 -- DROP TABLE Paciente CASCADE;
 -- DROP TABLE Triagem;  
 -- DROP TABLE Procedimento;
--- DROP TABLE Usuario;
 
 
+ 
 
 
-  
