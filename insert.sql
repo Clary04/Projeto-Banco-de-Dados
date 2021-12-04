@@ -179,18 +179,98 @@ VALUES ('50174322601', 'Ricardo Melo da Silva', '18/01/1996', 2835,
 
 -- Inserindo Pacientes na trabela 'Usuario' 
 
-INSERT INTO Usuario values ('jvitor', 'admin@123', '01234534');
-INSERT INTO Usuario values ('lmanu', 'admin@456', '95123456');
-INSERT INTO Usuario values ('arnaldo', 'admin@789', '212351244');
-INSERT INTO Usuario values ('anagabi', 'admin@1011', '123124839');
-INSERT INTO Usuario values ('mariad', 'admin@1213', '812312334');
-INSERT INTO Usuario values ('jvicente', 'admin@1415', '012412238');
-INSERT INTO Usuario values ('jirineu', 'admin@1617', '252342353');
-INSERT INTO Usuario values ('enzo', 'admin@1819', '123562238');
-INSERT INTO Usuario values ('lsophia', 'admin@1920', '1231231238');
-INSERT INTO Usuario values ('pbeatriz', 'admin@2021', '012412239');
+INSERT INTO Usuario (Login_user, Senha, CPF_Paciente) 
+VALUES ('jvitor', 'admin@123', '01234534');
+INSERT INTO Usuario (Login_user, Senha, CPF_Paciente) 
+VALUES ('lmanu', 'admin@456', '95123456');
+INSERT INTO Usuario (Login_user, Senha, CPF_Paciente) 
+VALUES ('arnaldo', 'admin@789', '212351244');
+INSERT INTO Usuario (Login_user, Senha, CPF_Paciente) 
+VALUES ('anagabi', 'admin@1011', '123124839');
+INSERT INTO Usuario (Login_user, Senha, CPF_Paciente) 
+VALUES ('mariad', 'admin@1213', '812312334');
+INSERT INTO Usuario (Login_user, Senha, CPF_Paciente) 
+VALUES ('jvicente', 'admin@1415', '012412238');
+INSERT INTO Usuario (Login_user, Senha, CPF_Paciente) 
+VALUES ('jirineu', 'admin@1617', '252342353');
+INSERT INTO Usuario (Login_user, Senha, CPF_Paciente) 
+VALUES ('enzo', 'admin@1819', '123562238');
+INSERT INTO Usuario (Login_user, Senha, CPF_Paciente) 
+VALUES ('lsophia', 'admin@1920', '1231231238');
+INSERT INTO Usuario (Login_user, Senha, CPF_Paciente) 
+VALUES ('pbeatriz', 'admin@2021', '012412239');
 
 -- Inserindo Profissionais na tabela 'Usuario'
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('louberzr', 'admin@0098', '518293812');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('cardosomari', 'admin@9083', '1235938123');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('crisferr', 'admin@0438', '532413722');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('vibruna', 'admin@8873', '92123715');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('marbas', 'admin@0762', '123592381');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('luabea', 'admin@224', '123593813');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('peixotobia', 'admin@873', '732425316');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('ducarlos', 'admin@7751', '123593812');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('lebarros', 'admin@2982', '879812387');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('alexten', 'admin@1283', '987123895');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('amandav', 'admin@909', '891723798');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('rodsmp', 'admin@006', '632418755');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('laurenvivi', 'admin@124', '8719387230');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('guerrape', 'admin@093', '2319823984');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('marvic', 'admin@772', '2314123345');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('meloju', 'admin@441', '2355698873');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('lmbrdmarc2', 'admin@203', '2131237894');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('gustlm', 'admin@9846', '1318644223');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('mirellas', 'admin@3732', '8712783782');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('jslourenco', 'admin@554', '8978912374');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('vitpra', 'admin@0023', '8712378972');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('brunandd', 'admin@492', '8273891723');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('saulops', 'admin@1254', '1923839455');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('dioantunes', 'admin@875', '2389908523');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('giovnsant', 'admin@8773', '8972731234');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('nnalmarc', 'admin@2793', '9081234985');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('pedropl', 'admin@9127', '70425690156');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('lurdesm', 'admin@0932', '90587910402');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('lilic', 'admin@26871', '60171233320');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('cristren', 'admin@8971', '70425661158');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('jordig', 'admin@1221', '50541498632');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('saleserc', 'admin@2359', '50241798431');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('luisaac', 'admin@7547', '72025690184');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('dudavasc', 'admin@1833', '49036078413');
+INSERT INTO Usuario (Login_user, Senha, CPF_Profissional) 
+VALUES ('melosric', 'admin@', '50174322601');
 
 
 -- INSERTS (Cartão_SUS)
@@ -494,8 +574,8 @@ UPDATE Profissional SET CPF_Coordenador = '8719387230' WHERE CPF = '50174322601'
 -- DELETE DE UM PROFISSIONAL (ATENDENTE)
 
 DELETE FROM Atendente WHERE CPF = '90587910402';
+DELETE FROM Usuario WHERE CPF_Profissional = '90587910402';
 DELETE FROM Profissional WHERE CPF = '90587910402'; 
-
 
 --- DELETE DE UM ACOMPANHANTE
 

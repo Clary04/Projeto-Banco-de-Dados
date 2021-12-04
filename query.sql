@@ -32,8 +32,6 @@
 	Procedimento_Profissional pro on prof.CPF = pro.CPF_Profissional GROUP BY prof.Nome ORDER BY prof.Nome;
  
 	
-	/*select pro.CPF_Profissional, prof.Nome from Procedimento_Profissional pro, 
-	Profissional prof WHERE prof.CPF = pro.CPF_Profissional ORDER BY prof.Nome;*/  
 
 	-- OBTENDO O NOME, CPF E ID DE TRIAGEM DOS PACIENTES ENTRE OS 100 PRIMEIROS COM O QUADRO 'Muito urgente'
 	SELECT pa.CPF, pa.Nome, tr.Id
@@ -43,13 +41,7 @@
 	HAVING tr.Id BETWEEN 1 and 100
 	ORDER BY tr.Id ASC;
 
-	/*SELECT tr.CPF_paciente, tr.Id
-	FROM Triagem tr
-	WHERE Quadro = 'Muito urgente'
-	GROUP BY tr.Id
-	HAVING tr.Id  BETWEEN 1 and 100
-	ORDER BY tr.Id ASC;*/
-
+	
 	-- OBTENDO O NOME DO PACIENTE E O NOME DO ACOMPANHANTE (Se tiver) 
 	SELECT Paciente.Nome AS nome_paciente, Acompanhante.Nome AS nome_acompanhante
 	From Paciente 
